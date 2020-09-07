@@ -1,0 +1,23 @@
+py -3.7 -m venv venv37
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+venv37/Scripts/Activate.ps1
+clear
+
+python -m pip install --upgrade pip
+
+pip install -r requirements.txt
+
+----------------------------------------------------------------------------------------------
+
+pip install ipykernel
+
+ipython kernel install --user --name=venv37
+
+----------------------------------------------------------------------------------------------
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/jubatistim/_template_python.git
+git push -u origin master
